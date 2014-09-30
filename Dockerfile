@@ -1,4 +1,4 @@
-FROM sameersbn/debian:jessie.20140918
+FROM debian:jessie
 
 RUN wget -q -O - "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo apt-key add - \
  && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
